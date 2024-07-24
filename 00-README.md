@@ -10,9 +10,9 @@ This repo is public beacuse I wanted it to be......hehehe
 For now the programs I have written are:
 
 
-1. Checking if an array is sorted or not, if yes then finding the Sorting Manner.
+1. [Checking if an array is sorted or not, if yes then finding the Sorting Manner.](https://github.com/divyansh0260/BasicJavaProjects/blob/main/01-ArraySorting.java)
 
-2. Simple programs using Recursion only.
+2. [Simple programs using Recursion only.](https://github.com/divyansh0260/BasicJavaProjects/blob/main/02%20-%20Recursion.java)
 
 
 
