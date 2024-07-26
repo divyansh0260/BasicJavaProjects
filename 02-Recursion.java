@@ -14,46 +14,53 @@ public class Recursion{
         //The Catalogue of programs to choose from
         System.out.println("These are the following programs: ");
         System.out.println("1. Printing a multiplication table.");
-        System.out.println("2. Printing Factorial of a number.");
+        System.out.println("2. Printing Asterisk Patterns.");
         System.out.print("Enter Your Choice: ");
         int choice=new Scanner(System.in).nextInt();
 
         //Calling the methods
         switch(choice){
             case 1 ->{
-                int n=obj.takeInput();
-                System.out.print("Print Table Upto?: ");
-                int i=new Scanner(System.in).nextInt();
+                int n=obj.takeInput("Enter the number: ");
+                int i=obj.takeInput("Table upto?: ");
                 obj.printTable(n,i);
             }
             case 2 ->{
-                int n=obj.takeInput();
-                if(n>39){
-                    System.err.println("Integer too big!!");
-                    System.exit(0);
-                }
-                System.out.printf("The factorial of %d is: ", n, obj.fact(n));
+                int n=obj.takeInput("No. of rows: ");
+                obj.printPatternAsc(n);
+                System.out.println();
+                obj.printPatternDsc(n);
             }
             default ->{System.err.println(choice+" is not even in the options mate!");}
         }
 
     }
-    
-    int takeInput(){
+
+
+    //String parameter to Print what user specifically wants rather than adding a generic Input Statement
+    int takeInput(String st){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter N: ");
+        System.out.print(st);
         int n=sc.nextInt();
         return n;
     }
     
-    long fact(long n) {
-        if (n == 0){return 1;}
-        else{return n * fact(n - 1);}
-}
-    
+    //multiplication Table
     void printTable(int n, int i){
         if(i>1){printTable(n,i-1);}
         System.out.printf("%2d x %2d = %2d%n", n, i, n*i);
+    }
+
+    //Printing patterns
+    void printPatternAsc(int i){
+        if(i>=1){printPatternAsc(i-1);}
+        for(int j=0;j<i;j++){System.out.print("* ");}
+        System.out.println();
+    }
+    void printPatternDsc(int i){
+        for(int j=0;j<i;j++){System.out.print("* ");}
+        System.out.println();
+        if(i>=1){printPatternDsc(i-1);}
     }
     
 }
