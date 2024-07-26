@@ -22,7 +22,9 @@ public class Recursion{
         switch(choice){
             case 1 ->{
                 int n=obj.takeInput();
-                obj.printTable(n,1);
+                System.out.print("Print Table Upto?: ");
+                int i=new Scanner(System.in).nextInt();
+                obj.printTable(n,i);
             }
             case 2 ->{
                 int n=obj.takeInput();
@@ -50,7 +52,7 @@ public class Recursion{
 }
     
     void printTable(int n, int i){
-        if(i>=1){printTable(n,i-1);}
+        if(i>1){printTable(n,i-1);}
         System.out.printf("%2d x %2d = %2d%n", n, i, n*i);
     }
     
