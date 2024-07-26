@@ -14,7 +14,7 @@ For now the programs I have written are:
 
 2. [Simple programs using Recursion only.](https://github.com/divyansh0260/BasicJavaProjects/blob/main/02%20-%20Recursion.java)
 - Multiplication Table
-- Factorial
+- Asterisk Patterns
 
 
 ## Authors
