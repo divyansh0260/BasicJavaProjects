@@ -1,6 +1,6 @@
 /*
 Objective:      Solving most of the questions using Recursion only.
-Skills Learned: Kuch kuch hota h!
+Skills Learned: Faking consistency on github by editing and pushing the same code again and again!
 Author:         Divyansh:)
 */
 
@@ -27,7 +27,7 @@ public class Recursion{
             case 2 ->{
                 int n=obj.takeInput();
                 if(n>39){
-                    System.err.println("Bhai tu pagal h kya??");
+                    System.err.println("Integer too big!!");
                     System.exit(0);
                 }
                 System.out.printf("The factorial of %d is: ", n, obj.fact(n));
@@ -50,8 +50,8 @@ public class Recursion{
 }
     
     void printTable(int n, int i){
+        if(i>=1){printTable(n,i-1);}
         System.out.printf("%2d x %2d = %2d%n", n, i, n*i);
-        if(i<10){printTable(n,i+1);}
     }
     
 }
