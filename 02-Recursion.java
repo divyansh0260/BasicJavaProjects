@@ -15,6 +15,7 @@ public class Recursion{
         System.out.println("These are the following programs: ");
         System.out.println("1. Printing a multiplication table.");
         System.out.println("2. Printing Asterisk Patterns.");
+        System.out.println("3. Nth term of Combinatorial Fibonacci Series.");
         System.out.print("Enter Your Choice: ");
         int choice=new Scanner(System.in).nextInt();
 
@@ -30,6 +31,10 @@ public class Recursion{
                 obj.printPatternAsc(n);
                 System.out.println();
                 obj.printPatternDsc(n);
+            }
+            case 3 ->{
+                int n=obj.takeInput("Enter the value of N(<40): ");
+                System.out.printf("The Nth term is: %3d", obj.fib(n));
             }
             default ->{System.err.println(choice+" is not even in the options mate!");}
         }
@@ -61,6 +66,12 @@ public class Recursion{
         for(int j=0;j<i;j++){System.out.print("* ");}
         System.out.println();
         if(i>=1){printPatternDsc(i-1);}
+    }
+
+    //Fibonacci Series
+    int fib(int n){
+        if(n==1||n==0){return n;}//In Classical Fibonacci, the first term is Zero
+        return fib(n-1)+fib(n-2);
     }
     
 }
