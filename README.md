@@ -16,6 +16,7 @@ For now the programs I have written are:
 2. [Simple programs using Recursion only.](https://github.com/divyansh0260/BasicJavaProjects/blob/main/02-Recursion.java)
 - Multiplication Table
 - Asterisk Patterns
+- Nth Term of Combinatorial Fibonacci
 
 
 ## Authors
