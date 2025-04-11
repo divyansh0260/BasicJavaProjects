@@ -2,7 +2,7 @@
 
 As I learn Java, I have decided to upload my newly written programs on Github.
 These progams are a collection from various sources like: CodeWithHarry, LeetCode, Codeforces etc.
-This repo is public beacuse I wanted it to be......hehehe
+This repo is public beacuse I wanted it to be.....huh
 
 
 
@@ -26,4 +26,4 @@ For now the programs I have written are:
 
 
 ## 🚀 About Me
-I. Code. With. Frustration.
+I. CODE. WITH. FRUSTRATION.
