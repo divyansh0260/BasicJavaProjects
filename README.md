@@ -18,6 +18,7 @@ For now the programs I have written are:
 - Asterisk Patterns
 - Nth Term of Combinatorial Fibonacci
 
+3. [Number Guessing Game](https://github.com/divyansh0260/BasicJavaProjects/blob/main/03-NumberGuessingGame.java)
 
 ## Authors
 
