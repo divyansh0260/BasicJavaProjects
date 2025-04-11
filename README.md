@@ -26,4 +26,4 @@ For now the programs I have written are:
 
 
 ## 🚀 About Me
-I'm a wanna-be SDE.....
+I. Code. With. Frustration.
